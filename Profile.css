@@ -1,0 +1,88 @@
+#my-profile{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#my-profile form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+}
+#my-profile img{
+    width: 18vmin;
+    height: 18vmin;
+    float: left;
+    padding: 5px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(199, 199, 199);
+    background: white;
+}
+#my-profile input{
+    box-shadow: 0 0 7px rgb(172, 171, 171);
+    font-size: 2.5vmin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 35px;
+    background: white;
+    border: none;
+    height: 4.5vmin;
+    width: 50%;
+    margin-top: 5vmin;
+}
+#my-profile button{
+    width: 50%;
+    height: 4.3vmin;
+    font-size: 2.3vmin;
+    border-radius: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(38, 168, 255);
+    border: none;
+    float: right;
+    margin-top: 22vmin;
+}
+#my-profile button:hover{
+    border: 1px solid white;
+}
+::-webkit-file-upload-button{
+    border: none;
+    background: green;
+    color: white;
+    padding: 5px;
+    box-shadow: 1px 1px 7px rgb(156, 156, 156);
+    border-radius: 35px;
+}
+::-webkit-file-upload-button:hover{
+    cursor: pointer;
+    background: rgb(0, 102, 0);
+}
+@media only screen and (max-width: 600px){
+    #my-profile{
+        height: 80%;
+    }
+    #my-profile img{
+        width: 30vmin;
+        height: 30vmin;
+    }
+    #my-profile input{
+        margin-left: 20px;
+        width: 80%;
+        height: 9vmin;
+        margin-top: 15vmin;
+        font-size: small;
+    }
+    #my-profile form{
+        height: 80%;
+    }
+    #my-profile button{
+        width: 80%;
+        height: 9vmin;
+        font-size: small;
+        margin-left: 3.3vmin;
+    }
+}

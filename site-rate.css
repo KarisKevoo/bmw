@@ -1,0 +1,144 @@
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.heading h3 {
+  font-size: 3.5vmin;
+  font-family: Cambria, Cochin, Times, serif;
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgb(131, 107, 79);
+}
+.rating_container {
+  width: 50%;
+  height: 72%;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(177, 177, 177);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stars {
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.rate-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  position: relative;
+}
+.stars input {
+  display: none;
+}
+.stars label {
+  font-size: 3.5vmin;
+  padding: 10px;
+}
+.post > .text {
+  font-size: 3vmin;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+}
+.rating_container section {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.8vmin;
+  font-weight: bold;
+  color: rgb(110, 180, 5);
+  text-shadow: 1px 2px 4px rgb(202, 202, 202);
+  position: absolute;
+  top: 62%;
+}
+.rating_container form > textarea {
+  width: 80%;
+  height: 100% !important;
+  margin-bottom: 20px;
+  border: 1px solid orange;
+  border-radius: 3px;
+}
+.rating_container textarea:focus {
+  outline: none;
+  border: 2px solid orange;
+}
+.rating_container button {
+  width: 80px;
+  height: 80px;
+  background: orange;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.rating_container button:hover {
+  background: rgb(219, 143, 2);
+}
+.rating_container input:not(:checked) ~ label:hover,
+.rating_container input:not(:checked) ~ label:hover ~ label {
+  color: orange;
+  cursor: pointer;
+  transition: 0.2s;
+}
+input:checked ~ label {
+  color: orange;
+}
+.rating_container .rate-form {
+  width: 80%;
+  height: 70%;
+  border: none;
+}
+#star-5:checked ~ section::before {
+  content: "I love it! 😍";
+}
+#star-4:checked ~ section::before {
+  content: "I just like it! 😚";
+}
+#star-3:checked ~ section::before {
+  content: "It is awesome! 🙂";
+}
+#star-2:checked ~ section::before {
+  content: "I just don't like it! 😕";
+}
+#star-1:checked ~ section::before {
+  content: "I just hate it! 😠";
+}
+@media only screen and (max-width: 600px) {
+  .rating_container {
+    width: 90%;
+  }
+  .stars {
+    width: 80%;
+  }
+  .stars label {
+    font-size: 8vmin;
+    padding: 5px;
+  }
+  .post .text {
+    font-size: 5vmin;
+  }
+  .rating_container section {
+    font-size: 5vmin;
+    top: 50%;
+  }
+  .rating_container .rate-form textarea {
+    width: 100%;
+    height: 100% !important;
+    position: relative;
+  }
+  .rating_container button {
+    height: 40px;
+  }
+  .heading h3 {
+    font-size: 6vmin;
+  }
+}

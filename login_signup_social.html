@@ -1,0 +1,50 @@
+<div class="Signup-modal" id="Signup-modal">
+    <form class="signup-form" action="signup.php" method="POST">
+        <H1> <img src="resources\logo.jpg" alt="">Sign up</H1>
+        <p>Please fill all the required details to create an account</p><br>
+        <label for="username" class="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter username" name="username" required>
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" pattern=".{8,}" placeholder="Enter Password. Minimum 8 characters" name="password" required>
+        <label for="passwordRepeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password. Minimum 8 characters" name="passwordRepeat" required>
+        <label for="checkbox">
+            <input type="checkbox" class="checkbox" value="yes" name="stayloggedin">
+            Stay logged in
+        </label>
+        <p>By clicking sign up you agree with our <a href="">terms and conditions</a></p>
+        <div class="cancelsubmit">
+            <button id="cancel">Cancel</button>
+            <button type="submit" id="submit" name="submit">Sign up</button>
+        </div>
+    </form>
+</div>
+<div class="Login-modal" id="Login-modal">
+    <form class="login-form" action="login.php" method="POST">
+        <h1><img src="resources\logo.jpg" alt="">Log in</h1>
+        <p>Fill in the required credentials to log in</p>
+        <label for="email"><b>Email</b></label>
+        <input type="email" id="email" placeholder="Enter Email" name="email" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" placeholder="Enter Password" name="password" required>
+        <label for="checkbox">
+            <input type="checkbox" name="stayloggedin" class="checkbox"> Stay logged in
+        </label>
+        <div class="loginorsignup">
+            <button type="submit" id="login">Log in</button>
+            <hr id="hr1">or
+            <hr id="hr2">
+            <button id="signup2">Signup</button>
+        </div>
+    </form>
+    <div class="close" onclick="close()" id="close"><i class="fas fa-times"></i></div>
+</div>
+<div class="social-media">
+    <div id="img" onclick="FWTT()" title="Reach me on socialmedia"><img src="resources\costomer care.png" alt=""></div>
+    <div id="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+    <div id="twitter"><a href=""><i class="fab fa-twitter"></i></a></div>
+    <div id="whatsapp"><a href=""><i class="fab fa-whatsapp"></i></a></div>
+    <div id="telegram"><a href=""><i class="fab fa-telegram-plane"></i></a></div>
+</div>
